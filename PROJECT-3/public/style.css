@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    z-index: 1000;
+    background-color: rgb(245,245,247);
+}
+.space{
+    width: 280px;
+}
+
+ul{
+    list-style: none;
+    font-size: 13px;
+}
+ul li{
+    display: inline-block;
+    padding: 15px;    
+}
+ul li:hover{
+    cursor: pointer;
+}    
+.dropdown{
+    width: 100%;
+    background-color: white;
+    display: none;
+    margin-top: 20px;
+    left: 0%;
+}
+ul li:hover .dropdown{
+    height: 400px;
+    display: block;
+    position: absolute;
+    overflow: visible;
+    transform: 3s;
+}
+.dropdown ul{
+    display: flex;
+    font-weight: 900;
+    font-size: 15px;
+}
+.dropdown ul li{
+    display: block;
+}
+.dropdown ul li:hover{
+   cursor: pointer;
+}
+.menuarea{
+    width: 18%;
+    flex-direction: column;
+    display: flex;
+    transform: translateX(300px);
+    color: rgb(46, 45, 45);
+}
+.menuarea:hover{
+   cursor: pointer;
+}
+.menuarea p{
+    font-weight: 100;
+    font-size: 13px;
+    color: gray;
+    padding: 18px 0px;
+}
+.menuarea h2{
+    margin: 8px 0px;
+}
+.menuarea li{
+    font-size: small;
+    padding: 4px 0px;
+    font-weight: 500;
+}
+svg{
+    margin: 0px 30px;
+    cursor: pointer;
+}
+.nav2{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    font-size: 14px;
+    color: rgb(52, 51, 51);
+    text-align: center;
+}
+.nav3{
+    width: 100%;
+    height: 30px;
+    background: rgb(230,240,248);
+    background: linear-gradient(99deg, rgba(230,240,248,1) 0%, rgba(166,213,247,1) 9%, rgba(153,189,243,1) 21%, rgba(170,159,237,1) 45%, rgba(212,147,230,1) 65%, rgba(244,124,184,1) 79%, rgba(246,149,126,1) 85%, rgba(248,207,172,1) 99%);
+}
+span{
+    color: rgb(33, 105, 250);
+}
+.box{
+    width: 100%;
+    height: 320px ;
+    display: flex;
+}
+.empty{
+    width: 150px;
+    height: 150px;
+}
+.color{
+    display: flex;
+}
+.line{
+    width: 100%;
+}
+.line h1{
+    font-size: 45px;
+    background-image: linear-gradient(to right, #0090f7, #ba62fc, #f2416b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.line span{
+    font-size: 45px;
+    font-weight: 600;
+    color: rgb(110, 109, 109);
+}
+.followers{
+    width: 300px;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+}
+.followers span{
+    color: rgb(46, 46, 46);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 5px 0px;
+}
+.followers p{
+    text-decoration: underline;
+    color: #0090f7;
+    font-size: 13px;
+    padding: 2px 43px 15px;
+}
+.items{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+.apple{
+    width: 130px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.apple img{
+    width: 100%;
+    padding: 10px 0px;
+}
+.apple span{
+    color: rgb(53, 53, 53);
+    padding: 15px 45px;
+    font-weight: 600;
+}
+.colorr{
+    display: flex;
+    height: 100px;
+    padding-top: 45px;
+}
+.colorr h1{
+    font-size: 30px;
+    background-image: linear-gradient(to right, #0090f7, #ba62fc, #f2416b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.colorr span{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(110, 109, 109);
+}
+.cards{
+    width: 100%;
+    display: flex;
+    padding: 0px 0px 50px;
+}
+.card{
+    width: 490px;
+    height: 450px;
+    background-image: url(/images/store-card-50-holiday-iphone-pro-202411_GEO_IN.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.cards p{
+    font-size: 12px;
+    color: rgb(180, 111, 7);
+    font-weight: 600;
+    margin: 30px 0px 10px 90px;
+}
+.cards h1{
+    margin: 0px 50px 5px;
+}
+.cards span{
+    color: black;
+    margin: 0px 0px 0px 40px;
+}
+.card:hover{
+    transition: 0.5s ease-in-out;    
+    transform: scale(1.04);
+}
+.card2{
+    width: 490px;
+    height: 450px;
+    cursor: pointer;
+    background-image: url(/images/store-card-50-holiday-watch-s10-202411.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 0px 20px;
+}
+.card2:hover{
+    transition: 0.5s ease-in-out;    
+    transform: scale(1.04);
+}
+.card3{
+    width: 490px;
+    height: 450px;
+    cursor: pointer;
+    background-image: url(/images/store-card-50-holiday-macbook-pro-202411.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card3:hover{
+    transition: 0.5s ease-in-out;    
+    transform: scale(1.04);
+}
+.card4{
+    width: 430px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/store-card-40-holiday-engraving-202411.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card4:hover{
+    transition: 0.5s ease-in-out;    
+    transform: scale(1.04);
+}
+.card5{
+    width: 370px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/airpods-4-anc-select-202409.jpg);
+    background-position: top;
+    background-size: 290px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin: 0px 10px 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card5 p{
+    font-size: 12px;
+    color: rgb(180, 111, 7);
+    font-weight: 600;
+    margin: 350px 0px 10px 50px;
+}
+.cards h3{
+    padding: 0px 0px 0px 40px;
+}
+.cards h2{
+    padding-left: 40px;
+}
+.card5:hover{
+    transition: 0.5s ease-in-out;    
+    transform: scale(1.04);
+}
+.card6{
+    width: 370px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/airpods-pro-2-hero-select-202409.jpg);
+    background-position: top;
+    background-size: 290px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card6 p{
+    font-size: 12px;
+    color: rgb(180, 111, 7);
+    font-weight: 600;
+    margin: 350px 0px 10px 40px;
+}
+.card6:hover{
+    transition: 0.5s ease-in-out; 
+    transform: scale(1.04);   
+} 
+.card7{
+    width: 370px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/MX2D3.jpg);
+    background-position: top;
+    background-size: 290px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card7 p{
+    font-size: 12px;
+    color: rgb(180, 111, 7);
+    font-weight: 600;
+    margin: 350px 0px 10px 40px;
+}
+.card7:hover{
+    transition: 0.5s ease-in-out; 
+    transform: scale(1.04);   
+}   
+.card8{
+    width: 430px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/store-card-40-holiday-quick-picks-202411.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card8:hover{
+    transition: 0.5s ease-in-out;    
+    transform: scale(1.04);
+}
+.card9{
+    width: 370px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/airpods-max-select-202409-starlight.jpg);
+    background-position: top;
+    background-size: 290px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin: 0px 10px 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card9 p{
+    font-size: 12px;
+    color: rgb(180, 111, 7);
+    font-weight: 600;
+    margin: 350px 0px 10px 50px;
+}
+.card9:hover{
+    transition: 0.5s ease-in-out;    
+    transform: scale(1.04);
+}
+.card10{
+    width: 370px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/MYY73.jpg);
+    background-position: top;
+    background-size: 290px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card10 p{
+    font-size: 12px;
+    color: rgb(180, 111, 7);
+    font-weight: 600;
+    margin: 350px 0px 10px 40px;
+}
+.card10:hover{
+    transition: 0.5s ease-in-out; 
+    transform: scale(1.04);   
+} 
+.card11{
+    width: 370px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/apple-tv-4k-hero-select-202210.jpg);
+    background-position: top;
+    background-size: 290px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card11 p{
+    font-size: 12px;
+    color: rgb(180, 111, 7);
+    font-weight: 600;
+    margin: 350px 0px 10px 40px;
+}
+.card11:hover{
+    transition: 0.5s ease-in-out; 
+    transform: scale(1.04);   
+} 
+.card12{
+    width: 430px;
+    height: 500px;
+    cursor: pointer;
+    background-image: url(/images/store-card-40-bts-edu-macbook-air-ipad-air-202406.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card12:hover{
+    transition: 0.5s ease-in-out;    
+    transform: scale(1.04);
+}
+.last{
+    width: 100%;
+}
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.straight{
+    width: 1000px;
+    border: 1px solid gray;
+}
+.footer{
+    width: 100%;
+    transform: translateX(260px);
+    padding: 20px 0px;
+    display: flex;
+}
+.part1{
+    width: 13%;
+}
+.part1 span{
+    font-size: 14px;
+    color: black;
+}
+.all{
+    padding: 14px 0px;
+}
+.all p{
+    color: gray;
+    font-size: 13px;
+    padding: 3px 0px;
+}
+.part2{
+    transform: translateX(270px);
+}
+html, body {
+    overflow-x: hidden;
+}
