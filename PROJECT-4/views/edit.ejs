@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Update in mongo</h1>
+    <form action="/updateData" method="post">
+        <input hidden  name="id" value="<%=singleData.id%>">
+        <input type="text" placeholder="Enter Book name" name="bookname" value="<%=singleData.bookname%>">
+        <input type="text" placeholder="Enter Author name" name="authorname" value="<%=singleData.authorname%>">
+        <input type="number" placeholder="Enter Price" name="price" value="<%=singleData.price%>">
+        <input type="number" placeholder="Enter Quantity" name="quantity" value="<%=singleData.quantity%>">
+        <input type="number" placeholder="Enter published year" name="year" value="<%=singleData.year%>">
+        <button type="submit">Update</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CRUD in mongo</h1>
+    <form action="/addData" method="post">
+        <input type="text" placeholder="Enter Book name" name="bookname" >
+        <input type="text" placeholder="Enter Author name" name="authorname">
+        <input type="number" placeholder="Enter Price" name="price">
+        <input type="number" placeholder="Enter Quantity" name="quantity" >
+        <input type="number" placeholder="Enter published year" name="year">
+        <button type="submit">Submit</button>
+    </form>
+ 
+      <table width="100%" border="1">
+        <thead>
+            <tr>
+                 <th>ID</th>
+                 <th>Bookname</th>
+                 <th>Authorname</th>
+                 <th>Price</th>
+                 <th>Quantity</th>
+                 <th>Published Year</th>
+                 <th colspan="2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%data.map((e,i) => {%>
+                <tr>
+                    <td><%=e.id%></td>
+                    <td><%=e.bookname%></td>
+                    <td><%=e.authorname%></td>
+                    <td><%=e.price%></td>
+                    <td><%=e.quantity%></td>
+                    <td><%=e.year%></td>
+                    <td><button><a href="/editData?id=<%=e.id%>">Edit</a></button></td>
+                    <td><button><a href="/deleteData?id=<%=e.id%>">Delete</a></button></td>
+                </tr>
+            <%})%>
+        </tbody>
+      </table>
+</body>
+</html>
