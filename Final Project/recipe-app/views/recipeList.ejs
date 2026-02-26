@@ -1,0 +1,8 @@
+<%- include("partials/navbar") %>
+<h2>All Recipes</h2>
+<% recipes.forEach(r=>{ %>
+<div>
+<h3><%= r.title %></h3>
+<p><%= r.ingredients %></p>
+</div>
+<% }) %>
